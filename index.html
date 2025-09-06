@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Charity: Water</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <div class="logo">
+      <img src="img/water-can-transparent.png" alt="Water Can Logo" class="logo-img" />
+      charity: water
+    </div>
+
+    <!-- Hamburger toggle for mobile -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <label for="menu-toggle" class="menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <nav class="main-nav">
+      <div class="nav-links">
+        <a href="#">TAKE ACTION</a>
+        <a href="#">ABOUT US</a>
+        <a href="#">WHY WATER?</a>
+        <a href="#">SIGN IN</a>
+      </div>
+      <button class="give-btn">GIVE 💧</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+
+    <div class="hero-left">
+      <h1>Be the Reason Someone Drinks Clean Water Today</h1>
+      <p>For every person you reach, a life is changed with access to clean, safe water.</p>
+
+      <div class="donation-box">
+        <h3>Place a Donation</h3>
+
+        <!-- One Time / Monthly Toggle -->
+        <div class="tabs">
+          <input type="radio" id="one-time" name="donation-type" checked />
+          <label for="one-time">One Time</label>
+
+          <input type="radio" id="monthly" name="donation-type" />
+          <label for="monthly">Monthly</label>
+        </div>
+
+        <!-- Donation Amounts -->
+        <div class="amounts">
+          <input type="radio" id="amt10" name="donation-amount" />
+          <label for="amt10" class="amount-btn">$10</label>
+
+          <input type="radio" id="amt20" name="donation-amount" checked />
+          <label for="amt20" class="amount-btn">$20</label>
+
+          <input type="radio" id="amt100" name="donation-amount" />
+          <label for="amt100" class="amount-btn">$100</label>
+
+          <input type="radio" id="amt200" name="donation-amount" />
+          <label for="amt200" class="amount-btn">$200</label>
+        </div>
+
+        <!-- Other Amount -->
+        <input
+          type="number"
+          id="other-amount"
+          name="other-amount"
+          placeholder="Other Amount"
+          min="1"
+          class="other-amount-input"
+        />
+
+        <button class="sponsor-btn">Sponsor an Entire Water Project</button>
+        <button class="donate-btn">Donate</button>
+      </div>
+    </div>
+
+    <div class="hero-right"></div>
+  </section>
+</body>
+</html>
